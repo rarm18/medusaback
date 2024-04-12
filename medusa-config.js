@@ -38,9 +38,6 @@ const plugins = [
   `medusa-payment-manual`,
   {
     resolve: `@medusajs/file-local`,
-    options: {
-      upload_dir: "uploads/images",
-    },
   },
   {
     resolve: "@medusajs/admin",
