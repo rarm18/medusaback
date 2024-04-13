@@ -37,9 +37,11 @@ const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
   {
-    resolve: `@medusajs/file-local`,
+    resolve: `medusa-plugin-slack-notification`,
     options: {
-      upload_dir: "uploads",
+      show_discount_code: false,
+      slack_url: `https://hooks.slack.com/services/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`,
+      admin_orders_url: `http://localhost:7001/a/orders`,
     },
   },
   {
